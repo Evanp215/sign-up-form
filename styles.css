@@ -1,15 +1,17 @@
+/* General Page */
 * {
   margin: 0;
   padding: 0;
 }
-
 #page-container {
   display: flex;
   height: 100vh;
   width: 100vw;
 }
+/* General Page */
 
-#image-section {
+/* Left Screen START*/
+#left-screen {
   background: url(images/halie-west-25xggax4bSA-unsplash.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -52,8 +54,10 @@
   text-decoration: underline;
   font-weight: lighter;
 }
+/* Left Screen END*/
 
-#form-section{  
+/* Right Scren START*/
+#right-screen{  
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -62,6 +66,9 @@
   gap: 4vh;
   background-color:#e0e2f5;
 }
+
+
+/* Right Screen: Header */
 #form-header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   max-width: 38vw;
@@ -70,49 +77,25 @@
 #form-header > h2 {
   padding: 10px 0;
 }
+/* Right Screen: Header */
+
+/* Right Screen: Form */
 #form-container {
   background-color: #ffffff;
   box-shadow: 0px 3px 3px #a5a5a5;
   width: 100%;
   padding-bottom: 5vh;
+  height: auto;
 }
-#form {
-  max-width: 45vw;
-  height: 30vh;
-  padding-left: 4vw;
-}
-#form > h2 {
-  padding: 3vh 0;
+#form-container > h2 {
+  padding: 3vh 3vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-#button-container {
-  padding-left: 4vw;
-}
-button {
-  background-color: #596D48;
-  border-radius: 5px;
-  box-shadow: none;
-  color: #fff;
-  padding: 12px 44px;
-  border: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
-  font-weight:bold;  
-}
-#button-container > p {
-  padding-top: 2vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif ;
-  font-size: 18px;
-}
-p > a {
-  text-decoration: none;
-  color:#596D48 ;
-  font-weight:bold ;
 }
 form {
   display: flex;
   gap: 7vw;
   max-width: 34vw;
+  padding-left: 3vw;
 }
 #form-left {
   width: 50%;
@@ -125,7 +108,7 @@ form {
   flex-direction: column;
 }
 input {
-  margin-bottom: 30px;
+  margin-bottom: 2vh;
   border-radius: 3px;
   border: 2px solid #E5E7EB;
   padding: 8px 8px;
@@ -146,3 +129,43 @@ label {
   color: #444;
   padding-bottom: 2px;
 }
+.password-input:invalid {
+  border: 1px solid red;
+}
+.password-input:valid {
+  border: 2px solid green;
+}
+/* Right Screen: Form */
+
+
+/* Right Screen: Button */
+button {
+  background-color: #596D48;
+  border-radius: 5px;
+  box-shadow: none;
+  color: #fff;
+  padding: 12px 44px;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight:bold;  
+}
+button:active {
+  background-color: #6c8557;
+  box-shadow: 1px 1px 2px black;
+}
+#button-container > p {
+  padding-top: 2vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+  font-size: 18px;
+}
+#button-container {
+  padding-left: 4vw;
+}
+p > a {
+  text-decoration: none;
+  color:#596D48 ;
+  font-weight:bold ;
+}
+/* Right Screen: Button */
+/* Right Screen END */
